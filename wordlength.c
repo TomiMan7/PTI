@@ -1,4 +1,7 @@
-#include <stdio.h>
+//#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
@@ -8,7 +11,8 @@ int h = 0, n = 0x01;
 	   ++h;
 	while(n<<=1);
 
-printf("A szo hossza:%d\n",h);
-
+//printf("A szo hossza:%d\n",h);
+cout<<"A szo hossza: "<<h<<endl;
+	
 return 0;
 }

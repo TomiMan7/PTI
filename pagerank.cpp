@@ -2,6 +2,8 @@
 #include <iostream>
 #include <math.h>
 
+using namespace std;
+
 void print(double tomb[], int db)
 {
 	for(int i = 0; i < db; i++)

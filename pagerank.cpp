@@ -1,4 +1,3 @@
-//#include <stdio.h>
 #include <iostream>
 #include <math.h>
 #include <vector>
@@ -8,11 +7,9 @@ using namespace std;
 void print(vector<double>tomb, int db)
 {
 	for(double s : tomb)
-		//printf("PageRank[%d]: %lf\n",i,tomb[i]);
 		cout<<"PageRank"<<"["<<s<<"]:\t"<<endl;
 }
 
-//double distance(double PR[], double PRv[], int n)
 double distance(vector<double> PR, vector<double> PRv, int n)
 {
 
@@ -33,9 +30,6 @@ vector<vector<double>> L = {
 		{0.0, 1.0 / 2.0, 0.0, 0.0},
 		{0.0, 0.0, 1.0 /3.0, 0.0}
 		  };
-
-//double PR[4] = {0.0, 0.0, 0.0, 0.0};
-//double PRv[4] = {1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0};
 
 vector<double> PR = {0.0, 0.0, 0.0, 0.0};
 vector<double> PRv = {1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0};

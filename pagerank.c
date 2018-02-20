@@ -1,14 +1,12 @@
-//#include <stdio.h>
-#include <iostream>
+#include <stdio.h>
 #include <math.h>
 
-using namespace std;
 
 void print(double tomb[], int db)
 {
 	for(int i = 0; i < db; i++)
-		//printf("PageRank[%d]: %lf\n",i,tomb[i]);
-		cout<<"PageRank"<<"["<<i<<"]:\t"<<tomb[i]<<endl;
+		printf("PageRank[%d]: %lf\n",i,tomb[i]);
+
 }
 
 double distance(double PR[], double PRv[], int n)

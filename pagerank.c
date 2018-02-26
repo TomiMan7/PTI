@@ -6,7 +6,6 @@ void print(double tomb[], int db)
 {
 	for(int i = 0; i < db; i++)
 		printf("PageRank[%d]: %lf\n",i,tomb[i]);
-
 }
 
 double distance(double PR[], double PRv[], int n)
@@ -22,7 +21,6 @@ return sqrt(osszeg);
 
 int main()
 {
-
 double L [4][4] = {
 		{0.0, 0.0, 1.0 / 3.0, 0.0},
 		{1.0, 1.0 / 2.0, 1.0 / 3.0, 1.0},
@@ -32,16 +30,13 @@ double L [4][4] = {
 double PR[4] = {0.0, 0.0, 0.0, 0.0};
 double PRv[4] = {1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0, 1.0 / 4.0};
 
-
 for(;;)
 {
-
 	for(int i = 0; i < 4; i++)
 	{
 		PR[i] = 0.0;
 			for(int j = 0; j < 4; j++)
 				PR[i] += (L[i][j] * PRv[j]);
-
 	}
 	
 	if (distance(PR,PRv, 4) < 0.0000000001)

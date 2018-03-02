@@ -3,8 +3,8 @@
 #include <curses.h>
 #include <unistd.h>
 #include <sys/ioctl.h>
-int
-main (void)
+
+int main (void)
 {
     int xj = 0, xk = 0, yj = 0, yk = 0;
     int mx = 80 * 2, my = 24 * 2;

@@ -19,17 +19,31 @@ public class Valtcsere {
         
         int a = 47, b = 74;
         
+        System.out.println("a:" + a + "   b:" + b);       
+        a ^= b;       
+        b ^= a;        
+        a ^= b;        
+        System.out.println("a:" + a + "   b:" + b);       
+        
+        a = 47;
+        b = 74;
+        System.out.println("\n");
+        
+        System.out.println("a:" + a + "   b:" + b); 
+        a = a - b;
+        b = a + b;
+        a = b - a;
         System.out.println("a:" + a + "   b:" + b);
         
-        a ^= b;
+        a = 47;
+        b = 74;
+        System.out.println("\n");
         
-        b ^= a;
-        
-        a ^= b;
-        
-         System.out.println("a:" + a + "   b:" + b);       
-        
-        
+        System.out.println("a:" + a + "   b:" + b);
+        a = a * b;
+        b = a / b;
+        a = a / b;
+        System.out.println("a:" + a + "   b:" + b);
     }
     
 }
